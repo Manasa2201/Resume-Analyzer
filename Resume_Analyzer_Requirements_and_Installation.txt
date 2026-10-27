@@ -1,0 +1,63 @@
+RESUME ANALYZER PROJECT
+REQUIREMENTS AND INSTALLATION GUIDE
+===================================
+
+1. TECHNOLOGIES AND TOOLS USED
+------------------------------
+- Python: Main programming language and application logic.
+- Streamlit: Web interface, dashboard, forms, and results.
+- MySQL: Stores career roles, required skills, and analysis records.
+- pypdf: Extracts text from PDF resumes.
+- python-docx: Extracts text from DOCX resumes.
+- mysql-connector-python: Connects Python to the MySQL database.
+- re (Regular Expressions): Detects supported technical skills in text.
+- Streamlit Session State: Maintains application data and results during a session.
+- VS Code: Code editor used for development.
+
+Note:
+- The re module is included with Python; it does not need to be installed separately.
+- Streamlit Session State is built into Streamlit; it does not need a separate installation.
+
+2. REQUIREMENTS.TXT
+-------------------
+Create a file named requirements.txt in your project folder and add:
+
+streamlit
+pypdf
+python-docx
+mysql-connector-python
+
+These are the Python packages listed for the technologies documented in this project.
+If the code imports additional libraries, add those packages to requirements.txt as needed.
+
+3. INSTALLATION COMMANDS
+------------------------
+Open the VS Code terminal inside your project folder and run the commands below one by one.
+
+Step 1: Check Python
+    python --version
+
+Step 2: Install the project dependencies
+    python -m pip install -r requirements.txt
+
+Step 3: Verify Streamlit installation
+    python -m streamlit --version
+
+Step 4: Run the application
+If your main Streamlit file is named app.py, run:
+    python -m streamlit run app.py
+
+Replace app.py with your actual main filename if it is different.
+
+4. OTHER SOFTWARE REQUIRED
+--------------------------
+- Python: Install Python if it is not already installed.
+- MySQL Server: Install and start MySQL Server. It is separate software and is not installed using pip.
+- MySQL Workbench: Optional; useful for viewing and managing the MySQL database.
+- Visual Studio Code (VS Code): Used to write and run the project code.
+
+5. IMPORTANT NOTES
+------------------
+- Run installation commands from the project folder where requirements.txt is saved.
+- Make sure MySQL Server is running and the database connection settings in your code are correct.
+- The package list above reflects the technologies documented for the Resume Analyzer. Only add extra packages, such as pandas, if they are actually imported by your project code.
